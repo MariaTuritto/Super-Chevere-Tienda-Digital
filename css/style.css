@@ -1,0 +1,134 @@
+/*-----fonts-----*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Roboto+Condensed:wght@300;400&display=swap");
+
+
+/*----Normalize-----*/
+
+:root {
+    /*colors*/
+    --primary: #0b0500;
+    --secundary: #1f1300;
+    --alternative:#6d3d14; 
+    --text-color: #302b27;
+    --bottom-color: #f5b82b;
+
+    /*Spacings*/
+    --spacing-large: 6rem;
+    --spacing-medium:2.8rem;
+    --spacing-small:2rem;
+    --spacing--xsmall:1rem;
+
+    /*font-family*/
+    --font-principal:'lato', sans-serif;
+    --font-title:'Roboto Condensed', serif;
+
+    /*font-sizes*/
+    --text-large:5.2rem;
+    --text-medium:3rem;
+    --text-base:1.6rem;
+    --text-small:1.4rem;
+
+}
+
+*::after,
+*::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ html {
+    font-size: 62.5%;
+ }
+
+ body {
+    font-family: var(--font-principal);
+ }
+
+ ul {
+    list-style-type: none;
+ }
+
+ a {
+    text-decoration: none;
+    font-family: var(--font-title);
+    color: var(--text-color);
+ }
+
+ img {
+    width: 100%;
+ }
+/*--------header-------*/
+
+ .titulo1 {
+ text-align: center;
+ text-transform: uppercase;
+ background-color: var(--bottom-color);
+ color: black;
+ font-size: var(--text-small);
+ 
+ }
+
+ .logo__img{
+    max-width: 80px;
+    border-radius: 50%;
+    margin: 0 30px 0 30px;
+ }
+
+ .whatsapp_img {
+    width: 18px;
+    height: 18px;
+ }
+
+ header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-medium) 0;
+    border-bottom: solid 2px var(--bottom-color);
+ }
+ .menu__principal {
+    display: flex;
+    gap: var(--spacing-medium);
+ }
+
+ .menu__registro {
+    display: flex;
+    gap: var(--spacing-medium)
+ }
+
+ .menu__item {
+    font-size: var(--text-medium);
+    padding: var(--spacing-xsmall) 1rem; 
+    border: 2px solid #fff;
+    transition: all 1s;
+
+ }
+
+ .menu__item:hover{
+    border-color: var(--alternative);
+    border-radius: 5px;
+ }
+/*--------seccion principal---------*/
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: var(--spacing-small);
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteiner__text {
+    display: flex;
+    flex-direction: column;
+    color: var(--primary);
+    font-size: var(--text-large);
+    text-align: center;
+    }
+
+.texto2 {
+    font-size: var(--text-medium);
+    font-weight: 300;
+}
+ /*-------------main---------------*/
