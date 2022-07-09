@@ -4,114 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <title>Envios</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="contacto">
+    <p class="contacto__text1"> Entregas a domicilio dentro de zonas centricas en Rosario, consultar valor del envio a nuestro whatsapp 
+        <picture class="icon__whatsapp">
+            <img class="whatsapp_img" src="../img/whatsapp_logo_.png" alt="whatsapp">
+        </picture> +54 9 3412274645 </p>
     <header class="header" id="arriba">
-        <div class="header__titulo"> 
-            <p class="titulo1">Envios a domicilio dentro de Rosario, consultar valor del envio a nuestro whatsapp <img src="../img/whatsapp_logo_.png" alt="whatsapp"> +54 9 3412274645 </p>
-        </div>
-            <div class="header__navbar"> 
-                <div class="header__logo">
-                    <img src="../img/logo.jpg" alt="logo">
-                </div>
-            <nav class="header__navegacion"> 
-                 <ul class="header__navbar--menuprincipal">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="productos.html">Productos</a></li>
-                        <li><a href="envios.html">Envios</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-     
-            </nav>
-            </div>
+        <picture class="header__logo">
+            <img class="logo__img" src="../img/logo.jpg" alt="logo">
+        </picture> 
+            <nav class="navegation"> 
+            <ul class="menu__principal">
+                   <li class="contacto__menu"><a class="contacto__text" href="../index.html">Inicio</a></li>
+                   <li class="contacto__menu"><a class="contacto__text" href="nosotros.html">Nosotros</a></li>
+                   <li class="contacto__menu"><a class="contacto__text" href="productos.html">Productos</a></li>
+                   <li class="contacto__menu"><a class="contacto__text" href="#">Envios</a></li>
+                   <li class="contacto__menu"><a class="contacto__text" href="contacto.html">Contacto</a></li>
+           </ul>
+       </nav>
 
-        <div class="registro">
-            <ul class="header__navbar--registro">
-                       <li><a href="registrarse.html">Registrarse</a></li>
-                       <li><a href="iniciarsesion.html">Iniciar sesion</a></li>
-            </ul>
-       </div>
-   
-    </header>
-    <main>
-        <h2> Trabajamos dos métodos de envios </h2>
-                <ul> 
-                    <li>Envios con cadeteria particular, horarios: 13:00 a 16:00 y 19:30</li>        
-                    <li>Envios con aplicacion de PEDIDOS YA!, horarios: 11:00 a 19:30, <strong>solo pagos por transferencias o Mercado Pago</strong> </li>  
+       <div class="registro">
+           <ul class="menu__registro">
+                  <li class="contacto__menu"><a class="contacto__text" href="registrarse.html">Registrarse</a></li>
+                  <li class="contacto__menu"><a class="contacto__text" href="iniciarsesion.html">Iniciar sesion</a></li>
+           </ul>
+   </div>
+</header> 
+<p class="Contacto__titulo">Envios</p>         
+    <main class="delivery">
+        <p class="delivery__text"> Trabajamos dos métodos de envios </p>
+                <ul class="delivery__list"> 
+                    <li class="list">Envios con cadeteria particular, horarios: 13:00 a 16:00 y 19:30</li>        
+                    <li class="list">Envios con aplicacion de PEDIDOS YA!, horarios: 11:00 a 19:30, <strong>solo pagos por transferencias o Mercado Pago</strong> </li>  
                 </ul>
                 
 
         <form action=""> 
-            <label for="pago">Forma de pago</label>
+            <label class="delivery__text" for="pago">Formas de pago</label>
             <br>
-            <select name="pago" id="pago">
-                <option value=""> seleccciona tu forma de pago </option> 
+            <select class="pago" name="pago" id="pago">
+                <option value=""> seleccciona forma de pago </option> 
                 <option value="Efectivo"> Efectivo</option> 
                 <option value="transferencias">transferencias</option> 
 
             </select>
 
-            <br>
-            <div> Método de envio </div>
-            <input type="checkbox" name="cbox1"> Delivery particular
-            <input type="checkbox" name="cbox2"> Delivery con PEDIDOS YA
-     
+            <p class="delivery__text"> Selecciona Método de envio </p>
+             <div class="delivery__ckeckbox">
+                <input type="checkbox" name="cbox1"> Delivery particular
+                <input type="checkbox" name="cbox2"> Delivery con PEDIDOS YA
+            </div>
          </form>
  
     </main>
 
-
-
     <footer class="footer">
         <div class="footer__categoria">
             <p>Categorias</p>
-                <ul class="footer__navbar--categoria">
-                    <li><a href="productos.html">Almacem</a></li>
-                    <li><a href="productos.html">Bazar</a></li>
-                    <li><a href="productos.html">lacteos</a></li>
-                    <li><a href="productos.html">Bebidas</a></li>
-                    <li><a href="productos.html">Golosinas</a></li>
-    
-    
+                <ul>
+                    <li><a class="contacto__text" href="productos.html">Almacen</a></li>
+                    <li><a class="contacto__text" href="productos.html">Bazar</a></li>
+                    <li><a class="contacto__text" href="productos.html">lacteos</a></li>
+                    <li><a class="contacto__text" href="productos.html">Bebidas</a></li>
+                    <li><a class="contacto__text" href="productos.html">Golosinas</a></li>
                 </ul>
         </div>
-    
+
          <div class="footer__infoutil"> 
             <p>Informacion útil</p>
                 <ul class="footer__navbar--infoutil">
-                    <li><a href="#">Formas de Envio</a></li>
-                    <li><a href="#">Medios de Pago</a></li>
-                    <li><a href="#">¿Cómo comprar?</a></li>
-                    <li><a href="#">¿Cómo retirar?</a></li>
-                            
-                    
+                    <li><a a class="contacto__text" href="envios.html">Formas de Envio</a></li>
+                    <li><a a class="contacto__text" href="envios.html">Medios de Pago</a></li>
+                    <li><a a class="contacto__text" href="envios.html">¿Cómo comprar?</a></li>
+                    <li><a a class="contacto__text" href="envios.html">¿Cómo retirar?</a></li>   
                 </ul>
          </div>
-    
+
          <div class="footer__contacto">        
                 <p>Contacto</p>
                 <ul class="footer__navbar--contacto">
-                    <li><a href="#"><img src="../img/whatsapp_logo_.png" alt="whatsapp">+54 9 3412274645</a></li>
-                    <li><a href="#">superchevere.ar@gmail.com</a></li>
+                    <li><a a class="contacto__text" href="#">
+                    <picture class="icon__whatsapp">   
+                    <img class="whatsapp_img" src="../img/whatsapp_logo_.png" alt="whatsapp">
+                    </picture>+54 9 3412274645</a></li>
+                    <li><a a class="contacto__text" href="#">superchevere.ar@gmail.com</a></li>
                      
                 </ul>
         </div>
-    
-        <div class="footer__siguenos"> 
-                <p>Siguenos</p>
+        
+        <div class="footer__siguenos">      
+            <p>Siguenos</p>
+            <div class="footer__icons"> 
                 <img class="redes" src="../img/facebook_icon25.png" alt="facebook">
                 <img class="redes" src="../img/Instagram_icon25.png" alt="instagram">
+            </div>
         </div>
-    
+        
         <div class="footer__volver"> 
-            <p><a href="../index.html">Volver al Inicio</a></p>
+            <p><a class="contacto__text" href="../index.html">Volver al Inicio</a></p>
         </div>
     </footer>
 </body>

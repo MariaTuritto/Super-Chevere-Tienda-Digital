@@ -4,106 +4,214 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <title>Productos</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+
+<body class="contacto">
+    <p class="contacto__text1"> Entregas a domicilio dentro de zonas centricas en Rosario, consultar valor del envio a nuestro whatsapp 
+        <picture class="icon__whatsapp">
+            <img class="whatsapp_img" src="../img/whatsapp_logo_.png" alt="whatsapp">
+        </picture> +54 9 3412274645 </p>
+      
     <header class="header" id="arriba">
-        <div class="header__titulo"> 
-            <p class="titulo1">Envios a domicilio dentro de Rosario, consultar valor del envio a nuestro whatsapp <img src="../img/whatsapp_logo_.png" alt="whatsapp"> +54 9 3412274645 </p>
-        </div>
-            <div class="header__navbar"> 
-                <div class="header__logo">
-                    <img src="../img/logo.jpg" alt="logo">
-                </div>
-            <nav class="header__navegacion"> 
-                 <ul class="header__navbar--menuprincipal">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="#">Productos</a></li>
-                        <li><a href="envios.html">Envios</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+        <picture class="header__logo">
+            <img class="logo__img" src="../img/logo.jpg" alt="logo">
+        </picture>  
+            <nav class="navegation"> 
+                 <ul class="menu__principal">
+                        <li class="contacto__menu"><a class="contacto__text" href="../index.html">Inicio</a></li>
+                        <li class="contacto__menu"><a class="contacto__text" href="nosotros.html">Nosotros</a></li>
+                        <li class="contacto__menu"><a class="contacto__text" href="#">Productos</a></li>
+                        <li class="contacto__menu"><a class="contacto__text" href="envios.html">Envios</a></li>
+                        <li class="contacto__menu"><a class="contacto__text" href="contacto.html">Contacto</a></li>
                 </ul>
-     
             </nav>
-            </div>
 
-        <div class="registro">
-            <ul class="header__navbar--registro">
-                       <li><a href="registrarse.html">Registrarse</a></li>
-                       <li><a href="iniciarsesion.html">Iniciar sesion</a></li>
-            </ul>
-       </div>
-   
+            <div class="registro">
+                <ul class="menu__registro">
+                       <li class="contacto__menu"><a class="contacto__text" href="registrarse.html">Registrarse</a></li>
+                       <li class="contacto__menu"><a class="contacto__text" href="iniciarsesion.html">Iniciar sesion</a></li>
+                </ul>
+        </div>
     </header>
-    <p class="titulo">Productos</p>
-    <section class="galeria__productos">
-         <img src="../img/cachapas1.png" alt="">
-         <img src="../img/chuletas1.png" alt="">
-         <img src="../img/pastelitos 1.png" alt="">
-         <img src="../img/tequenos12.png" alt="">
-         <img src="../img/jamonendiabladojpg 1.png" alt="">
-         <img src="../img/adoboah1.png" alt="">
-         <img src="../img/caraotas 1.png" alt="">
-         <img src="../img/cosaco 1.png" alt="">
-         <img src="../img/harinapan2.png" alt="">
-         <img src="../img/morixe 1.png" alt="">
-         <img src="../img/chessetris 1.png" alt="">
-         <img src="../img/panela 1.png" alt="">
 
+<p class="Contacto__titulo">Productos</p>
+
+<main class="conteinerpro"> 
+    <section class="catalogo" id="catalogo">
+        <article class="catalogo__box">
+            <picture class="catalogo__img"> 
+                <img src="../img/cachapas1.png" alt="Cachapas"> 
+            </picture>
+            <div class="catalogo__info">
+                <h2 class="catalogo__title">Cachapas Congeladas</h2>
+                <h3 class="catalogo__subtitle">Cachapas de Maiz (choclo) pack de 4 Unidades</h3>
+            </div>
+        </article>
+
+        <article class="catalogo__box">
+            <picture class="catalogo__img">
+                <img src="../img/chuletas1.png" alt="chuletas">
+            </picture>
+            <div class="catalogo__info">
+                <h2 class="catalogo__title">Chuletas ahumadas Congeladas</h2>
+                <h3 class="catalogo__subtitle">Chuletas de cerdo ahumadas, pack de 4 a 6 Unidades</h3>
+            </div>
+        </article>
           
-    </section>
-    
+        <article class="catalogo__box">
+            <picture class="catalogo__img">
+                <img src="../img/pastelitos 1.png" alt="pastelitos">
+            </picture>
+            <div class="catalogo__info">
+                <h2 class="catalogo__title">Pastelitos Congelados</h2>
+                <h3 class="catalogo__subtitle">Patelitos de harina de trigo rellenos, pack de 12 Unidades</h3>
+            </div>
+        </article>
+        
+        
+        <article class="catalogo__box">
+            <picture class="catalogo__img">
+                <img src="../img/tequenos12.png" alt="tequenos">
+            </picture>
+            <div class="catalogo__info">
+                <h2 class="catalogo__title">Tequeños Congelados</h2>
+                <h3 class="catalogo__subtitle">Tequeños de harina de trigo rellenos de queso blanco venezolano, pack de 12 Unidades</h3>
+            </div>
+        </article>
 
+        <article class="catalogo__box">
+            <picture class="catalogo__img">
+                <img src="../img/jamonendiabladojpg 1.png" alt="jamonendiablado">  
+            </picture>
+            <div class="catalogo__info">
+                <h2 class="catalogo__title">Jamón Endiablarte</h2>
+                <h3 class="catalogo__subtitle">Jamón endiablado para untar</h3>
+            </div>
+        </article>
+
+        <article class="catalogo__box">
+            <picture class="catalogo__img">
+                <img src="../img/adoboah1.png" alt="adobo">  
+            </picture>
+            <div class="catalogo__info">
+                <h2 class="catalogo__title">Adobo Común</h2>
+                <h3 class="catalogo__subtitle">Condimento adobo completo para sazonar</h3>
+            </div>
+        </article>
+
+        <article class="catalogo__box">
+            <picture class="catalogo__img">
+                <img src="../img/caraotas 1.png" alt="caraotas">
+            </picture>
+            <div class="catalogo__info">
+                <h2 class="catalogo__title"> Caraotas Negras</h2>
+                <h3 class="catalogo__subtitle">Caraotas negras seleccionadas, empaque de 500gr</h3>
+            </div>
+        </article>
+
+        <article class="catalogo__box">
+            <picture class="catalogo__img">
+                <img src="../img/cosaco 1.png" alt="cosaco">
+            </picture>
+            <div class="catalogo__info">
+                <h2 class="catalogo__title">Harina de Maíz Cosaco</h2>
+                <h3 class="catalogo__subtitle">Harina de maiz para arepas, empaque de 1kgr</h3>
+            </div>
+        </article>
+
+        <article class="catalogo__box">
+            <picture class="catalogo__img">
+                <img src="../img/harinapan2.png" alt="harinapan">
+            </picture>
+            <div class="catalogo__info">
+                <h2 class="catalogo__title">Harina de Maíz P.A.N</h2>
+                <h3 class="catalogo__subtitle">Harina de maiz para arepas, empaque de 1kgr</h3>
+            </div>
+        </article>
+      
+        <article class="catalogo__box">
+            <picture class="catalogo__img">
+                <img src="../img/morixe 1.png" alt="morixe">
+            </picture>
+            <div class="catalogo__info">
+                <h2 class="catalogo__title">Harina de Maíz Morixe</h2>
+                <h3 class="catalogo__subtitle">Harina de maiz para arepas, empaque de 1kgr</h3>
+            </div>
+        </article>
+
+        <article class="catalogo__box">
+            <picture class="catalogo__img">
+                <img src="../img/panela 1.png" alt="panela">
+            </picture>
+            <div class="catalogo__info">
+                <h2 class="catalogo__title">Panela LA CALEÑA</h2>
+                <h3 class="catalogo__subtitle">Panela entera de 300gr</h3>
+            </div>
+        </article>
+      
+        <article class="catalogo__box">
+            <picture class="catalogo__img">
+                <img src="../img/panelagranulada.jpg" alt="panelagranulada">
+            </picture>
+            <div class="catalogo__info">
+                <h2 class="catalogo__title">Panela Granulada</h2>
+                <h3 class="catalogo__subtitle">Panela granulada, empaque de 500gr</h3>
+            </div>
+        </article>  
+    </section>
+</main>
+
+
+    
 
 
     <footer class="footer">
         <div class="footer__categoria">
             <p>Categorias</p>
-                <ul class="footer__navbar--categoria">
-                    <li><a href="#">Almacem</a></li>
-                    <li><a href="#">Bazar</a></li>
-                    <li><a href="#">lacteos</a></li>
-                    <li><a href="#">Bebidas</a></li>
-                    <li><a href="#">Golosinas</a></li>
-    
-    
+                <ul>
+                    <li><a class="contacto__text" href="productos.html">Almacen</a></li>
+                    <li><a class="contacto__text" href="productos.html">Bazar</a></li>
+                    <li><a class="contacto__text" href="productos.html">lacteos</a></li>
+                    <li><a class="contacto__text" href="productos.html">Bebidas</a></li>
+                    <li><a class="contacto__text" href="productos.html">Golosinas</a></li>
                 </ul>
         </div>
-    
+
          <div class="footer__infoutil"> 
             <p>Informacion útil</p>
                 <ul class="footer__navbar--infoutil">
-                    <li><a href="envios.html">Formas de Envio</a></li>
-                    <li><a href="envios.html">Medios de Pago</a></li>
-                    <li><a href="envios.html">¿Cómo comprar?</a></li>
-                    <li><a href="envios.html">¿Cómo retirar?</a></li>
-                            
-                    
+                    <li><a a class="contacto__text" href="envios.html">Formas de Envio</a></li>
+                    <li><a a class="contacto__text" href="envios.html">Medios de Pago</a></li>
+                    <li><a a class="contacto__text" href="envios.html">¿Cómo comprar?</a></li>
+                    <li><a a class="contacto__text" href="envios.html">¿Cómo retirar?</a></li>   
                 </ul>
          </div>
-    
+
          <div class="footer__contacto">        
                 <p>Contacto</p>
                 <ul class="footer__navbar--contacto">
-                    <li><a href="#"><img src="../img/whatsapp_logo_.png" alt="whatsapp">+54 9 3412274645</a></li>
-                    <li><a href="#">superchevere.ar@gmail.com</a></li>
+                    <li><a a class="contacto__text" href="#">
+                    <picture class="icon__whatsapp">   
+                    <img class="whatsapp_img" src="../img/whatsapp_logo_.png" alt="whatsapp">
+                    </picture>+54 9 3412274645</a></li>
+                    <li><a a class="contacto__text" href="#">superchevere.ar@gmail.com</a></li>
                      
                 </ul>
         </div>
-    
-        <div class="footer__siguenos"> 
-                <p>Siguenos</p>
+        
+        <div class="footer__siguenos">      
+            <p>Siguenos</p>
+            <div class="footer__icons"> 
                 <img class="redes" src="../img/facebook_icon25.png" alt="facebook">
                 <img class="redes" src="../img/Instagram_icon25.png" alt="instagram">
+            </div>
         </div>
-    
+        
         <div class="footer__volver"> 
-            <p><a href="../index.html">Volver al Inicio</a></p>
+            <p><a class="contacto__text" href="../index.html">Volver al Inicio</a></p>
         </div>
     </footer>
 </body>

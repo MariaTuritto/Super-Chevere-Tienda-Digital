@@ -4,45 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <title>Contacto</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    <header class="header" id="arriba">
-        <div class="header__titulo"> 
-            <p class="titulo1">Envios a domicilio dentro de Rosario, consultar valor del envio a nuestro whatsapp <img src="../img/whatsapp_logo_.png" alt="whatsapp"> +54 9 3412274645 </p>
-        </div>
-            <div class="header__navbar"> 
-                <div class="header__logo">
-                    <img src="../img/logo.jpg" alt="logo">
-                </div>
-            <nav class="header__navegacion"> 
-                 <ul class="header__navbar--menuprincipal">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="productos.html">Productos</a></li>
-                        <li><a href="envios.html">Envios</a></li>
-                        <li><a href="#">Contacto</a></li>
+<body class="contacto"> 
+    
+    <p class="contacto__text1"> Entregas a domicilio dentro de zonas centricas en Rosario, consultar valor del envio a nuestro whatsapp 
+        <picture class="icon__whatsapp">
+            <img class="whatsapp_img" src="../img/whatsapp_logo_.png" alt="whatsapp">
+        </picture> +54 9 3412274645 </p>
+
+    <header class="header">
+        <picture class="header__logo">
+            <img class="logo__img" src="../img/logo.jpg" alt="logo">
+        </picture>  
+            <nav class="navegation"> 
+                 <ul class="menu__principal">
+                        <li class="contacto__menu"><a class="contacto__text" href="../index.html">Inicio</a></li>
+                        <li class="contacto__menu"><a class="contacto__text" href="nosotros.html">Nosotros</a></li>
+                        <li class="contacto__menu"><a class="contacto__text" href="productos.html">Productos</a></li>
+                        <li class="contacto__menu"><a class="contacto__text" href="envios.html">Envios</a></li>
+                        <li class="contacto__menu"><a class="contacto__text" href="#">Contacto</a></li>
                 </ul>
-     
             </nav>
-            </div>
 
-        <div class="registro">
-            <ul class="header__navbar--registro">
-                       <li><a href="registrarse.html">Registrarse</a></li>
-                       <li><a href="iniciarsesion.html">Iniciar sesion</a></li>
-            </ul>
-       </div>
-   
+            <div class="registro">
+                <ul class="menu__registro">
+                       <li class="contacto__menu"><a class="contacto__text" href="registrarse.html">Registrarse</a></li>
+                       <li class="contacto__menu"><a class="contacto__text" href="iniciarsesion.html">Iniciar sesion</a></li>
+                </ul>
+        </div>
     </header>
-            <h2 class="titulo">Contacto</h2>
+    <!----------------CONTENIDO CONTACTO--------------->
+            <p class="Contacto__titulo">Contacto</p>
     <main>
-
         <form action=""> 
            <fieldset class="formulario__contacto"> 
 
@@ -64,59 +60,55 @@
 
                <input class="registrarse" type="submit" value="Enviar consulta">
 
-
            </fieldset>
-    
         </form>
-
-
      </main>
    
 
      <footer class="footer">
         <div class="footer__categoria">
             <p>Categorias</p>
-                <ul class="footer__navbar--categoria">
-                    <li><a href="productos.html">Almacem</a></li>
-                    <li><a href="productos.html">Bazar</a></li>
-                    <li><a href="productos.html">lacteos</a></li>
-                    <li><a href="productos.html">Bebidas</a></li>
-                    <li><a href="productos.html">Golosinas</a></li>
-
-
+                <ul>
+                    <li><a class="contacto__text" href="productos.html">Almacen</a></li>
+                    <li><a class="contacto__text" href="productos.html">Bazar</a></li>
+                    <li><a class="contacto__text" href="productos.html">lacteos</a></li>
+                    <li><a class="contacto__text" href="productos.html">Bebidas</a></li>
+                    <li><a class="contacto__text" href="productos.html">Golosinas</a></li>
                 </ul>
         </div>
 
          <div class="footer__infoutil"> 
             <p>Informacion útil</p>
                 <ul class="footer__navbar--infoutil">
-                    <li><a href="envios.html">Formas de Envio</a></li>
-                    <li><a href="envios.html">Medios de Pago</a></li>
-                    <li><a href="envios.html">¿Cómo comprar?</a></li>
-                    <li><a href="envios.html">¿Cómo retirar?</a></li>
-                            
-                    
+                    <li><a a class="contacto__text" href="envios.html">Formas de Envio</a></li>
+                    <li><a a class="contacto__text" href="envios.html">Medios de Pago</a></li>
+                    <li><a a class="contacto__text" href="envios.html">¿Cómo comprar?</a></li>
+                    <li><a a class="contacto__text" href="envios.html">¿Cómo retirar?</a></li>   
                 </ul>
          </div>
 
          <div class="footer__contacto">        
-                <p >Contacto</p>
+                <p>Contacto</p>
                 <ul class="footer__navbar--contacto">
-                    <li><a href="#"><img src="../img/whatsapp_logo_.png" alt="whatsapp">+54 9 3412274645</a></li>
-                    <li><a href="#">superchevere.ar@gmail.com</a></li>
+                    <li><a a class="contacto__text" href="#">
+                    <picture class="icon__whatsapp">   
+                    <img class="whatsapp_img" src="../img/whatsapp_logo_.png" alt="whatsapp">
+                    </picture>+54 9 3412274645</a></li>
+                    <li><a a class="contacto__text" href="#">superchevere.ar@gmail.com</a></li>
                      
                 </ul>
         </div>
-
-        <div class="footer__siguenos"> 
-                <p>Siguenos</p>
-
+        
+        <div class="footer__siguenos">      
+            <p>Siguenos</p>
+            <div class="footer__icons"> 
                 <img class="redes" src="../img/facebook_icon25.png" alt="facebook">
                 <img class="redes" src="../img/Instagram_icon25.png" alt="instagram">
+            </div>
         </div>
-
+        
         <div class="footer__volver"> 
-            <p><a href="../index.html">Volver al Inicio</a></p>
+            <p><a class="contacto__text" href="../index.html">Volver al Inicio</a></p>
         </div>
     </footer>
 </body>
