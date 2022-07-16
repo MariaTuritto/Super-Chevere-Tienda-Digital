@@ -51,6 +51,7 @@
  ul {
     list-style-type: none;
     text-align: center;
+    color: var(--primary);
  }
 
  a {
@@ -66,56 +67,93 @@
  }
 /*--------header-------*/
 
- .titulo1 {
+.titulo1 {
  text-align: center;
  text-transform: uppercase;
  font-size: var(--text-small);
  height: 30px;
  border-bottom: 1px solid var(--bottom-color);
+ display: flex;
+ align-items: center;
+ justify-content: center;
  }
 
- .logo__img{
-    max-width: 120px;
+.whatsapp_img {
+   width: 18px;
+   height: 18px;
+}
+ 
+.logo__img{
+    max-width: 100px;
     border-radius: 50%;
     margin: 0 30px 0 30px;
  }
 
- .whatsapp_img {
-    width: 18px;
-    height: 18px;
- }
+ .logo__img:hover{
+   max-width: 110px;
+   border-radius: 50%;
 
- header{
+}
+
+header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: var(--spacing-medium) 0;
     
  }
- .menu__principal {
+.menu__principal {
     display: flex;
     gap: var(--spacing-medium);
  }
+/*------------INDEX CON BOOTSTRAP-------------*/
+.navbar {
+display: flex;
+align-items: center;
+background-color: var(--secundary);
 
+}
  .menu__registro {
     display: flex;
     gap: var(--spacing-medium)
  }
-
  .menu__item {
     font-size: var(--text-medium);
-    padding: var(--spacing-xsmall) 1rem; 
-    border: 2px solid var(--secundary);
+    padding:0.5rem; 
+    border: 1px solid var(--secundary);
     transition: all 1s;
     font-weight: 300;
-
+    color: var(--primary);
+    margin: 0 1.5rem 0 1.5rem;
  }
-
  .menu__item:hover{
     border-color: var(--bottom-color);
-    border-radius: 5px;
+    border-radius: 3px;
+    color: var(--primary);
  }
-/*--------seccion principal---------*/
+ .menu__product{
+   border: 1px solid var(--primary);
+   transition: all 1s;
+   font-weight: 300;
+   color: var(--alternative);
+ }
+ .menu__product:hover{
+   border-color: #302b27;
+   border-radius: 3px;
+   background-color: #fff;
+ }
+
+ .icon__success{
+background-color: #fff;
+ }
+
+ .menu__link{
+   text-decoration: none;
+   color: var(--primary);
+ }
+
+
+/*--------Seccion principal---------*/
 
 .conteiner {
     max-width: 1200px;
@@ -136,7 +174,7 @@ h2{
 .conteiner__text {
     display: flex;
     flex-direction: column;
-    color: var(--primary) ;
+    color: var(--primary);
     text-align: center;
     padding-right: 10rem;
     }
@@ -180,7 +218,7 @@ h2{
    font-size: var(--text-large);
    font-weight: 400;
  }
- .main__texto4{
+.main__texto4{
    font-family: var(--font-principal);
    font-size: var(--text-medium);
  }
@@ -191,10 +229,14 @@ h2{
 
 .main__texto6{
    font-size: var(--text-small);
-   background-color: var(--bottom-color);
    padding: var(--spacing-xsmall);
-   border-radius: var(--spacing-medium);
+   color: var(--secundary);
+   font-weight: 700;
+}
 
+.btn-main{
+   background-image: linear-gradient(to top,#ffffff 10%, #c9c01c  100%) 
+   
 }
  /*------gallery--------*/
  .gallery {
@@ -205,8 +247,7 @@ justify-content: center;
 
  /*----------footer---------*/
  .footer {
-   border-top: 2px solid var(--alternative);
-   margin-top: var(--spacing-small);
+   margin-top: var(--spacing-medium);
    padding-top: var(--spacing-small);
    height: 15  rem;
    display: flex;
@@ -219,34 +260,44 @@ p{
    font-size: var(--text-medium);
    margin-bottom: var(--spacing-medium);
    text-align: center;
+   color: var(--primary);
 
 }
-
 .footer__icons{
    display: flex;
 }
+
 .redes {
    margin: var(--spacing-xsmall);
-  
 }
-/*------- VIEWS CONTACTO----------*/
+
+.footer__color{ 
+  background-image: linear-gradient(130deg,#000000 10%, #1f0909 60%, #605a26e6  100%)
+}
+
+/*------- VIEWS-CONTACTO CON BOOTSTRAP----------*/
 .contacto {
    background-color: var(--primary);
    color: var(--secundary);
 }
+
 .contacto__text {
-   color: var(--secundary);
+   color: var(--primary);
 }
 
 .contacto__text1{
-color: var(--text-color);
+color: var(--primary);
 text-transform: uppercase;
 font-size: var(--text-small);
 height: 30px;
 border-bottom: 2px solid var(--bottom-color);
 }
 
-.contacto__menu {
+.navbar__views{
+   background-color: var(--primary); 
+ }
+ 
+.views__menu {
    font-size: var(--text-medium);
    padding: var(--spacing-xsmall) 1rem; 
    border: 2px solid var(--primary);
@@ -254,12 +305,22 @@ border-bottom: 2px solid var(--bottom-color);
    font-weight: 300;
    }
    
-.contacto__menu:hover{
+.views__menu:hover{
    border-color: var(--bottom-color);
    border-radius: 5px;
    } 
 
-.Contacto__titulo{
+.menu__item--views{
+   font-size: var(--text-medium);
+   padding:0.5rem; 
+   border: 1px solid var(--primary);
+   transition: all 1s;
+   font-weight: 300;
+   color: var(--secundary);
+   margin: 0 1.5rem 0 1.5rem;
+   }
+
+.views__titulo{
    font-family: var(--font-title);
    text-transform: uppercase;
    font-weight: 300;
@@ -267,50 +328,10 @@ border-bottom: 2px solid var(--bottom-color);
    border-top: 1px solid var(--bottom-color);
    font-size: var(--text-large);
    text-align: justify;
+   color: var(--secundary);
    }
 
-.formulario__contacto{
-       
-   display:flex;
-   flex-direction: column;
-   align-items: center;
-   border: var(--spacing-xsmall);
- }
 
-.datos__hola {
-
-   text-align: center;
-   margin: var(--spacing-large) 0;
-
-}
-.datoscontacto {
-height: 0;
-width: 0;
-color: var(--primary);
-
-}
-
-.ingresa__datoscontacto {
-font-family: var(--font-principal);
-text-align: justify;
-width:30rem;
-height: 2rem;
-border: 1px solid var(--border-color) ;
-padding: 0.5rem;
-margin: 0.2rem;
-font-size: var(--spacing-xsmall);
-line-height: 1.6;
-
-}
-
-.mensaje {
-width: 30rem;
-height: 20rem;
-border: 1px solid var(--border-color);
-font-family: var(--font-title);
-color: var(--text-color); 
-
-}
 
 /*-------------CATALOGO-PRODUCTS--------*/
 
@@ -369,6 +390,7 @@ color: var(--text-color);
    font-family: var(--font-title);
    font-size: var(--text-medium);
    text-align: justify;
+   color: var(--secundarygi);
 }
 
 .list{
@@ -487,9 +509,10 @@ color: var(--text-color);
    gap: var(--spacing-small);
 
 }
-/*--------------------------------RESPONSIVE-----------------------------*/
 
-/*------ Mobile Styles------- */
+/*----------------RESPONSIVE---------------
+
+/*------ Mobile Styles------- 
 @media only screen and (max-width: 480px) {
 
    .titulo1{
@@ -560,7 +583,8 @@ p{
 }
 a{
    font-family: var(--font-title);
-   font-size: var(--text-small); 
+   font-size: var(--text-small);
+   color: var(--primary);
 }
 .footer__icons{
    display: flex;
@@ -571,7 +595,7 @@ a{
    width: 20px;
    height: 20px;
 }
-/*--------Mobil style - PRODUCTOS ------*/
+/*--------Mobil style - PRODUCTOS ------
 .contacto__text1{
    height: 50px;
    border-bottom: 1px solid var(--bottom-color);
@@ -591,7 +615,7 @@ a{
    margin: 0.5rem;
 
 }
-/*-------------Mobile style-ENVIOS-------------*/
+/*-------------Mobile style-ENVIOS-------------
 .Contacto__titulo{
    font-size: 3rem;
 }
@@ -608,7 +632,7 @@ a{
 }
 }
 
-/* Tablet Styles */
+/* ---------------Tablet Styles ----------------------
 @media only screen and (min-width: 481px) and (max-width: 960px) {
    .titulo1{
       text-align: center;
@@ -675,7 +699,7 @@ p{
    height: 20px;
 }
 
-/*--------tablet style -Products------*/
+/*--------tablet style -Products------
 .contacto__text1{
    height: 50px;
    border-bottom: 1px solid var(--bottom-color);
@@ -686,7 +710,7 @@ p{
    margin: 0.5rem;
 
 }
-/*-------------Tablet style-ENVIOS-------------*/
+/*-------------Tablet style-ENVIOS-------------
 .Contacto__titulo{
    font-size: 3.5rem;
 }
@@ -702,3 +726,9 @@ p{
    font-size: var(--text-medium);
 }
 }
+
+a{
+   color: var(--primary);
+}
+
+/*---------------------Animaciones--------------------------*/

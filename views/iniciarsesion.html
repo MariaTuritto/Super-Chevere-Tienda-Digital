@@ -6,37 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <title>Iniciar sesion</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- CSS propio --> 
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="contacto">
-    <p class="contacto__text1"> Entregas a domicilio dentro de zonas centricas en Rosario, consultar valor del envio a nuestro whatsapp 
+    <p class="footer__color contacto__text1"> Entregas a domicilio dentro de zonas centricas en Rosario, consultar valor del envio a nuestro whatsapp 
         <picture class="icon__whatsapp">
             <img class="whatsapp_img" src="../img/whatsapp_logo_.png" alt="whatsapp">
-        </picture> +54 9 3412274645 </p>
-      
-    <header class="header" id="arriba">
-        <picture class="header__logo">
-            <img class="logo__img" src="../img/logo.jpg" alt="logo">
-        </picture>  
-            <nav class="navegation"> 
-                 <ul class="menu__principal">
-                        <li class="contacto__menu"><a class="contacto__text" href="../index.html">Inicio</a></li>
-                        <li class="contacto__menu"><a class="contacto__text" href="nosotros.html">Nosotros</a></li>
-                        <li class="contacto__menu"><a class="contacto__text" href="#">Productos</a></li>
-                        <li class="contacto__menu"><a class="contacto__text" href="envios.html">Envios</a></li>
-                        <li class="contacto__menu"><a class="contacto__text" href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+        </picture> +54 9 3412274645 
+    </p>
+        <body class="contacto"> 
+        <header>
+            <!------------AGREGANDO BOOTSTRAP AL NAV-------->
+            <div class="header__logo">
+                <a href="../index.html"> 
+                    <img class="logo__img" src="../img/logo.jpg" alt="logo" >
+                </a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar__views">
+                <div class="container-fluid">
+                <button class="navbar-toggler icon__success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon icon__success"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item views__menu">
+                        <a class="nav-link menu__item--views" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item views__menu">
+                        <a class="nav-link menu__item--views" href="./nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item dropdown views__menu">
+                        <a class="nav-link dropdown-toggle menu__item--views" href="/views/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu menu__item" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item menu__product" href="/views/productos.html">Almacem</a></li>
+                          <li><a class="dropdown-item menu__product" href="productos.html">Bazar</a></li>
+                          <li><a class="dropdown-item menu__product" href="productos.html">lacteos</a></li>
+                          <li><a class="dropdown-item menu__product" href="productos.html">Bebidas</a></li>
+                          <li><a class="dropdown-item menu__product" href="productos.html">Golosinas</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item views__menu">
+                        <a class="nav-link menu__item--views" href="envios.html">Envios</a>
+                      </li>
+                      <li class="nav-item views__menu">
+                        <a class="nav-link menu__item--views" href="contacto.html">Contacto</a>
+                      </li>
+                      <div class="registro">
+                        <ul class="menu__registro">
+                        <li class="views__menu">
+                          <a class="nav-link menu__item--views" href="registrarse.html">Registrarse</a></li>
+                        <li class="views__menu">
+                          <a class="nav-link menu__item--views" href="iniciarsesion.html">Iniciar sesion</a></li>
+                        </ul>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
 
-            <div class="registro">
-                <ul class="menu__registro">
-                       <li class="contacto__menu"><a class="contacto__text" href="registrarse.html">Registrarse</a></li>
-                       <li class="contacto__menu"><a class="contacto__text" href="iniciarsesion.html">Iniciar sesion</a></li>
-                </ul>
-        </div>
-    </header>
-
-    <p class="Contacto__titulo">Iniciar Sesion</p>
+    <p class="views__titulo">Iniciar Sesion</p>
      
     <main>
         <form>
@@ -57,37 +90,36 @@
      </main>
    
 
-     <footer class="footer">
+     <footer class="footer footer__color">
         <div class="footer__categoria">
             <p>Categorias</p>
-                <ul>
-                    <li><a class="contacto__text" href="productos.html">Almacen</a></li>
-                    <li><a class="contacto__text" href="productos.html">Bazar</a></li>
-                    <li><a class="contacto__text" href="productos.html">lacteos</a></li>
-                    <li><a class="contacto__text" href="productos.html">Bebidas</a></li>
-                    <li><a class="contacto__text" href="productos.html">Golosinas</a></li>
+                <ul class="footer__navbar--categoria">
+                    <li><a href="productos.html">Almacem</a></li>
+                    <li><a href="productos.html">Bazar</a></li>
+                    <li><a href="productos.html">lacteos</a></li>
+                    <li><a href="productos.html">Bebidas</a></li>
+                    <li><a href="productos.html">Golosinas</a></li>
                 </ul>
         </div>
-
+  
          <div class="footer__infoutil"> 
             <p>Informacion útil</p>
                 <ul class="footer__navbar--infoutil">
-                    <li><a a class="contacto__text" href="envios.html">Formas de Envio</a></li>
-                    <li><a a class="contacto__text" href="envios.html">Medios de Pago</a></li>
-                    <li><a a class="contacto__text" href="envios.html">¿Cómo comprar?</a></li>
-                    <li><a a class="contacto__text" href="envios.html">¿Cómo retirar?</a></li>   
+                    <li><a href="envios.html">Formas de Envio</a></li>
+                    <li><a href="envios.html">Medios de Pago</a></li>
+                    <li><a href="envios.html">¿Cómo comprar?</a></li>
+                    <li><a href="envios.html">¿Cómo retirar?</a></li>   
                 </ul>
          </div>
-
+  
          <div class="footer__contacto">        
                 <p>Contacto</p>
                 <ul class="footer__navbar--contacto">
-                    <li><a a class="contacto__text" href="#">
+                    <li><a href="#">
                     <picture class="icon__whatsapp">   
                     <img class="whatsapp_img" src="../img/whatsapp_logo_.png" alt="whatsapp">
-                    </picture>+54 9 3412274645</a></li>
-                    <li><a a class="contacto__text" href="#">superchevere.ar@gmail.com</a></li>
-                     
+                    </picture> +54 9 3412274645</a></li>
+                    <li><a href="#">superchevere.ar@gmail.com</a></li>  
                 </ul>
         </div>
         
@@ -100,9 +132,10 @@
         </div>
         
         <div class="footer__volver"> 
-            <p><a class="contacto__text" href="../index.html">Volver al Inicio</a></p>
+            <p><a class="" href="../index.html">Volver al Inicio</a></p>
         </div>
     </footer>
-    
-</body>
+       <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
 </html>

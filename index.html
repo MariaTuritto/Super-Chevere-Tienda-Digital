@@ -4,37 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Chevere</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <title>Super Chevere</title>
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- CSS propio --> 
 <link rel="stylesheet" href="./css/style.css">
-
 </head>
-<body>
 
-    <!----------------------header+Nav bar------------------->
+<body>
+    <!----------------------HEADER + NAV BAR------------------->
     <p class="titulo1"> Entregas a domicilio dentro de zonas centricas en Rosario, consultar valor del envio a nuestro whatsapp 
         <picture class="icon__whatsapp">
             <img class="whatsapp_img" src="./img/whatsapp_logo_.png" alt="whatsapp">
         </picture> +54 9 3412274645 </p>
-      
-    <header class="header">
-        <picture class="header__logo">
-            <img class="logo__img" src="./img/logo.jpg" alt="logo">
-        </picture>  
-            <nav class="navegation"> 
-                 <ul class="menu__principal">
-                        <li class="menu__item"><a class="menu__link" href="">Inicio</a></li>
-                        <li class="menu__item"><a class="menu__link" href="./views/nosotros.html">Nosotros</a></li>
-                        <li class="menu__item"><a class="menu__link" href="./views/productos.html">Productos</a></li>
-                        <li class="menu__item"><a class="menu__link" href="./views/envios.html">Envios</a></li>
-                        <li class="menu__item"><a class="menu__link" href="./views/contacto.html">Contacto</a></li>
+    <header>
+        <!------------AGREGANDO BOOTSTRAP AL NAV-------->
+        <div class="header__logo">
+            <a href="index.html"> 
+                <img class="logo__img" src="./img/logo.jpg" alt="logo" >
+            </a>
+        </div>
+        <!-------------NAV-BAR---------->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+            <button class="navbar-toggler icon__success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon icon__success"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link menu__item" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu__item" href="#">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle menu__item" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                    </a>
+                    <ul class="dropdown-menu menu__item" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item menu__product" href="./views/productos.html">Almacem</a></li>
+                      <li><a class="dropdown-item menu__product" href="./views/productos.html">Bazar</a></li>
+                      <li><a class="dropdown-item menu__product" href="./views/productos.html">lacteos</a></li>
+                      <li><a class="dropdown-item menu__product" href="./views/productos.html">Bebidas</a></li>
+                      <li><a class="dropdown-item menu__product" href="./views/productos.html">Golosinas</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu__item" href="./views/envios.html">Envios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu__item" href="./views/contacto.html">Contacto</a>
+                  </li>
                 </ul>
-            </nav>
-
+              </div>
+            </div>
+          </nav>
         <div class="registro">
                 <ul class="menu__registro">
                        <li class="menu__item"><a class="menu__link" href="./views/registrarse.html">Registrarse</a></li>
@@ -43,10 +70,10 @@
         </div>
     </header>
     
-     <!--seccion principal-->
+     <!---------seccion principal-------->
     <section class="conteiner">
         <div class="conteiner__text">
-                    <h2>¿Sabes cómo preparar ricas arepas?</h2>
+                    <h2 class="animate__animated animate__fadeInRight animate__slow">¿Sabes cómo preparar ricas arepas?</h2>
                     <p class="texto2">Te dejo esta super receta </p>
         </div>
 
@@ -55,7 +82,7 @@
         </div>
     </section>
 
-    <!------------main----------->
+    <!----------------main--------------->
     
     <main class="main">
         <div class="image__main">
@@ -63,11 +90,11 @@
             <h1> PRODUCTOS VENEZOLANOS</h1>
                 <p class="main__texto4">Nacionales e Importados</p>
                 <p class="main__texto5"> “Sabores y texturas que te hacen sentir cerca de casa” </p>
-                <a href="./views/productos.html" class="main__texto6" >Ver más</a>
+                <a class="btn btn-main main__texto6" href="./views/productos.html" role="button">Ver más</a>
         </div>
         </div>
     </main>
-    <!--Aside-->
+    <!--------------Aside--------------->
     <aside id="gallery" class="gallery">
         <picture class="gallery__img">
             <img src="img/harinapan1.png" alt="Harina P.A.N">
@@ -83,8 +110,8 @@
         </picture>
     </aside>
 
-    <!--footer-->
-    <footer class="footer">
+    <!----------------footer----------------->
+    <footer class="footer footer__color">
         <div class="footer__categoria">
             <p>Categorias</p>
                 <ul class="footer__navbar--categoria">
@@ -113,8 +140,7 @@
                     <picture class="icon__whatsapp">   
                     <img class="whatsapp_img" src="./img/whatsapp_logo_.png" alt="whatsapp">
                     </picture> +54 9 3412274645</a></li>
-                    <li><a href="#">superchevere.ar@gmail.com</a></li>
-                     
+                    <li><a href="#">superchevere.ar@gmail.com</a></li>  
                 </ul>
         </div>
         
