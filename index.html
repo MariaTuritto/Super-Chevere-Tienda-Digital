@@ -1,97 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <title>Super Chevere</title>
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!-- CSS propio --> 
-<link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <!----------------------HEADER + NAV BAR------------------->
-    <p class="titulo1"> Entregas a domicilio dentro de zonas centricas en Rosario, consultar valor del envio a nuestro whatsapp 
+    <p class="titulo1"> Entregas a domicilio dentro de zonas centricas en Rosario, consultar valor del envio a nuestro
+        whatsapp
         <picture class="icon__whatsapp">
             <img class="whatsapp_img" src="./img/whatsapp_logo_.png" alt="whatsapp">
         </picture> +54 9 3412274645 </p>
     <header>
         <!------------AGREGANDO BOOTSTRAP AL NAV-------->
         <div class="header__logo">
-            <a href="index.html"> 
-                <img class="logo__img" src="./img/logo.jpg" alt="logo" >
+            <a href="index.html">
+                <img class="logo__img" src="./img/logo.jpg" alt="logo">
             </a>
         </div>
         <!-------------NAV-BAR---------->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-            <button class="navbar-toggler icon__success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon icon__success"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link menu__item" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link menu__item" href="#">Nosotros</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle menu__item" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Productos
-                    </a>
-                    <ul class="dropdown-menu menu__item" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item menu__product" href="./views/productos.html">Almacem</a></li>
-                      <li><a class="dropdown-item menu__product" href="./views/productos.html">Bazar</a></li>
-                      <li><a class="dropdown-item menu__product" href="./views/productos.html">lacteos</a></li>
-                      <li><a class="dropdown-item menu__product" href="./views/productos.html">Bebidas</a></li>
-                      <li><a class="dropdown-item menu__product" href="./views/productos.html">Golosinas</a></li>
+                <button class="navbar-toggler icon__success" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon icon__success"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link menu__item" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu__item" href="./views/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle menu__item" href="./views/productos.html"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu menu__item" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item menu__product" href="./views/productos.html">Almacen</a>
+                                </li>
+                                <li><a class="dropdown-item menu__product" href="./views/productos.html">Bazar</a></li>
+                                <li><a class="dropdown-item menu__product" href="./views/productos.html">lacteos</a>
+                                </li>
+                                <li><a class="dropdown-item menu__product" href="./views/productos.html">Bebidas</a>
+                                </li>
+                                <li><a class="dropdown-item menu__product" href="./views/productos.html">Golosinas</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu__item" href="./views/envios.html">Envios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu__item" href="./views/contacto.html">Contacto</a>
+                        </li>
+
+                        <div class="registro">
+                            <ul class="menu__registro">
+                                <li class="nav-item">
+                                    <a class="nav-link menu__item" href="./views/registrarse.html">Registrarse</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link menu__item" href="./views/iniciarsesion.html">Iniciar sesion</a>
+                                </li>
+                            </ul>
+                        </div>
                     </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link menu__item" href="./views/envios.html">Envios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link menu__item" href="./views/contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+                </div>
             </div>
-          </nav>
-        <div class="registro">
-                <ul class="menu__registro">
-                       <li class="menu__item"><a class="menu__link" href="./views/registrarse.html">Registrarse</a></li>
-                       <li class="menu__item"><a class="menu__link" href="./views/iniciarsesion.html">Iniciar sesion</a></li>
-                </ul>
-        </div>
+        </nav>
     </header>
-    
-     <!---------seccion principal-------->
+
+    <!---------seccion principal-------->
     <section class="conteiner">
         <div class="conteiner__text">
-                    <h2 class="animate__animated animate__fadeInRight animate__slow">¿Sabes cómo preparar ricas arepas?</h2>
-                    <p class="texto2">Te dejo esta super receta </p>
+            <h2 class="animate__animated animate__fadeInRight animate__slow">¿Sabes cómo preparar ricas arepas?</h2>
+            <p class="texto2">Te dejo esta super receta </p>
         </div>
 
-        <div class="video"> 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/YRmc06zxons" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YRmc06zxons"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
     </section>
 
     <!----------------main--------------->
-    
+
     <main class="main">
         <div class="image__main">
-        <div class= "text__main"> 
-            <h1> PRODUCTOS VENEZOLANOS</h1>
+            <div class="text__main">
+                <h1> PRODUCTOS VENEZOLANOS</h1>
                 <p class="main__texto4">Nacionales e Importados</p>
                 <p class="main__texto5"> “Sabores y texturas que te hacen sentir cerca de casa” </p>
                 <a class="btn btn-main main__texto6" href="./views/productos.html" role="button">Ver más</a>
-        </div>
+            </div>
         </div>
     </main>
     <!--------------Aside--------------->
@@ -114,49 +131,53 @@
     <footer class="footer footer__color">
         <div class="footer__categoria">
             <p>Categorias</p>
-                <ul class="footer__navbar--categoria">
-                    <li><a href="./views/productos.html">Almacem</a></li>
-                    <li><a href="./views/productos.html">Bazar</a></li>
-                    <li><a href="./views/productos.html">lacteos</a></li>
-                    <li><a href="./views/productos.html">Bebidas</a></li>
-                    <li><a href="./views/productos.html">Golosinas</a></li>
-                </ul>
+            <ul class="">
+                <li class=""><a class="menu__item" href="./views/productos.html">Almacem</a></li>
+                <li><a class="menu__item" href="./views/productos.html">Bazar</a></li>
+                <li><a class="menu__item" href="./views/productos.html">lacteos</a></li>
+                <li><a class="menu__item" href="./views/productos.html">Bebidas</a></li>
+                <li><a class="menu__item" href="./views/productos.html">Golosinas</a></li>
+            </ul>
         </div>
 
-         <div class="footer__infoutil"> 
+        <div class="footer__infoutil">
             <p>Informacion útil</p>
-                <ul class="footer__navbar--infoutil">
-                    <li><a href="./views/envios.html">Formas de Envio</a></li>
-                    <li><a href="./views/envios.html">Medios de Pago</a></li>
-                    <li><a href="./views/envios.html">¿Cómo comprar?</a></li>
-                    <li><a href="./views/envios.html">¿Cómo retirar?</a></li>   
-                </ul>
-         </div>
-
-         <div class="footer__contacto">        
-                <p>Contacto</p>
-                <ul class="footer__navbar--contacto">
-                    <li><a href="#">
-                    <picture class="icon__whatsapp">   
-                    <img class="whatsapp_img" src="./img/whatsapp_logo_.png" alt="whatsapp">
-                    </picture> +54 9 3412274645</a></li>
-                    <li><a href="#">superchevere.ar@gmail.com</a></li>  
-                </ul>
+            <ul class="">
+                <li><a class="menu__item" href="./views/envios.html">Formas de Envio</a></li>
+                <li><a class="menu__item" href="./views/envios.html">Medios de Pago</a></li>
+                <li><a class="menu__item" href="./views/envios.html">¿Cómo comprar?</a></li>
+                <li><a class="menu__item" href="./views/envios.html">¿Cómo retirar?</a></li>
+            </ul>
         </div>
-        
-        <div class="footer__siguenos">      
+
+        <div class="footer__contacto">
+            <p>Contacto</p>
+            <ul class="footer__navbar--contacto">
+                <li><a href="#">
+                        <picture class="icon__whatsapp">
+                            <img class="whatsapp_img" src="./img/whatsapp_logo_.png" alt="whatsapp">
+                        </picture> +54 9 3412274645
+                    </a></li>
+                <li><a href="#">superchevere.ar@gmail.com</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__siguenos">
             <p>Siguenos</p>
-            <div class="footer__icons"> 
+            <div class="footer__icons">
                 <img class="redes" src="./img/facebook_icon25.png" alt="facebook">
                 <img class="redes" src="./img/Instagram_icon25.png" alt="instagram">
             </div>
         </div>
-        
-        <div class="footer__volver"> 
-            <p><a href="#">Volver al Inicio</a></p>
+
+        <div class="footer__volver">
+            <p><a class="menu__item" href="./index.html">Volver al Inicio</a></p>
         </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
