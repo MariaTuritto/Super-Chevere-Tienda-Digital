@@ -12,12 +12,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- CSS propio -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
     <!----------------------HEADER + NAV BAR------------------->
-    <p class="titulo1"> Entregas a domicilio dentro de zonas centricas en Rosario, consultar valor del envio a nuestro
+    <p class="footer__color titulo1"> Entregas a domicilio dentro de zonas centricas en Rosario, consultar valor del
+        envio a nuestro
         whatsapp
         <picture class="icon__whatsapp">
             <img class="whatsapp_img" src="./img/whatsapp_logo_.png" alt="whatsapp">
@@ -25,9 +26,11 @@
     <header>
         <!------------AGREGANDO BOOTSTRAP AL NAV-------->
         <div class="header__logo">
-            <a href="index.html">
-                <img class="logo__img" src="./img/logo.jpg" alt="logo">
-            </a>
+            <a href="index.html"><img class="logo__img" src="./img/logo.jpg" alt="logo"></a>
+            <div class="header__info">
+                <h1 class="header__titulo">Súper Chevere</h1>
+                <p class="header__subtitulo">Tienda digítal de productos Venezolanos</p>
+            </div>
         </div>
         <!-------------NAV-BAR---------->
         <nav class="navbar navbar-expand-lg">
@@ -92,7 +95,7 @@
         </div>
 
         <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/YRmc06zxons"
+            <iframe class="video__index" width="560" height="315" src="https://www.youtube.com/embed/YRmc06zxons"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
@@ -104,15 +107,16 @@
     <main class="main">
         <div class="image__main">
             <div class="text__main">
-                <h1> PRODUCTOS VENEZOLANOS</h1>
+                <h2> PRODUCTOS VENEZOLANOS</h2>
                 <p class="main__texto4">Nacionales e Importados</p>
                 <p class="main__texto5"> “Sabores y texturas que te hacen sentir cerca de casa” </p>
-                <a class="btn btn-main main__texto6" href="./views/productos.html" role="button">Ver más</a>
+                <a class="btn btn-main main__texto6 footer__color" href="./views/productos.html" role="button">Ver
+                    más</a>
             </div>
         </div>
     </main>
     <!--------------Aside--------------->
-    <aside id="gallery" class="gallery">
+    <aside id="gallery" class="gallery gallery__index">
         <picture class="gallery__img">
             <img src="img/harinapan1.png" alt="Harina P.A.N">
         </picture>
@@ -152,13 +156,13 @@
 
         <div class="footer__contacto">
             <p>Contacto</p>
-            <ul class="footer__navbar--contacto">
-                <li><a href="#">
+            <ul class="">
+                <li><a href="">
                         <picture class="icon__whatsapp">
                             <img class="whatsapp_img" src="./img/whatsapp_logo_.png" alt="whatsapp">
                         </picture> +54 9 3412274645
                     </a></li>
-                <li><a href="#">superchevere.ar@gmail.com</a></li>
+                <li><a href="">superchevere.ar@gmail.com</a></li>
             </ul>
         </div>
 
