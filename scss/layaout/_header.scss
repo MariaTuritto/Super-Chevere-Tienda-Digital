@@ -1,0 +1,148 @@
+/*--------header-------*/
+body {
+   font-family: $font-principal;
+   background-color: $color-secundary;
+   color: $color-primary;
+}
+
+ul {
+   list-style-type: none;
+   text-align: center;
+   color: $color-primary;
+
+   a {
+      text-decoration: none;
+      font-family: $font-title;
+      font-size:  $text-medium;
+      color: $color-primary;
+      text-align: center;
+
+      &:visited {
+         color: rgba(110, 96, 2, 0.919);
+      }
+
+   }
+
+}
+
+img {
+   width: 100%;
+}
+
+.titulo1 {
+   
+   text-align: center;
+   text-transform: uppercase;
+   font-size: $text-small;
+   height: 30px;
+   border-bottom: 1px solid $bottom-color;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   .whatsapp_img {
+      width: 18px;
+      height: 18px;
+   }
+
+}
+
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: $spacing-medium 0;
+
+   .header {
+      &__logo {
+         display: flex;
+         align-items: center;
+
+      }
+
+      &__img {
+         max-width: 100px;
+         border-radius: 50%;
+
+      }
+
+      &:hover {
+         max-width: 110px;
+
+      }
+
+      &__info {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         padding-top: 1.8rem;
+         margin: 0 1.2rem 0 1.2rem;
+      }
+
+      &__titulo {
+         font-family: $font-title;
+         font-size: 3.2rem;
+         text-transform: uppercase;
+
+      }
+
+      &__subtitulo {
+         font-family: $font-title;
+         font-size: $text-small;
+      }
+
+   }
+}
+
+.menu__principal {
+   display: flex;
+   gap: $spacing-medium;
+}
+
+/*------------NAV-BAR CON BOOTSTRAP-------------*/
+.navbar {
+   display: flex;
+   align-items: center;
+   background-color: $color-secundary;
+
+}
+
+.menu__registro {
+   display: flex;
+   gap: $spacing-medium
+}
+
+.menu__item {
+   font-size:  $text-medium;
+   padding: 0.5rem;
+   border: 1px solid $color-secundary;
+   transition: all 1s;
+   font-weight: 300;
+   color: $color-primary;
+   margin: 0 1.5rem 0 1.5rem;
+
+   &:hover {
+      border-color: $bottom-color;
+      border-radius: 3px;
+      color: $color-primary;
+   }
+}
+
+.menu__product {
+   border: 1px solid $color-primary;
+   transition: all 1s;
+   font-weight: 300;
+   color: $color-alternative;
+
+   &:hover {
+      border-color: $text-color;
+      border-radius: 3px;
+      background-color:$color-primary;
+
+   }
+
+}
+
+.icon__success {
+   background-color:$color-primary;
+}

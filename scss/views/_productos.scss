@@ -1,0 +1,40 @@
+/*--------------PRODUCTS--------*/
+
+.conteinerpro {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: var(--spacing-small);
+ }
+ 
+ .catalogo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: var(--spacing-medium);
+ }
+ 
+ .catalogo__box {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xsmall);
+ }
+ 
+ .catalogo__info {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-medium);
+ 
+ }
+ 
+ .catalogo__title {
+    font-family: var(--font-title);
+    font-size: var(--text-medium);
+    color: var(--alternative);
+ 
+ }
+ 
+ .catalogo__subtitle {
+    margin-top: var(--spacing-xsmall);
+    color: var(--text-color);
+    font-size: var(--text-small);
+ }

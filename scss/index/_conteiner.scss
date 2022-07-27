@@ -1,0 +1,32 @@
+/*--------Seccion principal---------*/
+
+.conteiner {
+   max-width: 1200px;
+   margin: 0 auto;
+   margin-top: $spacing-small;
+   display: flex;
+   justify-content: space-evenly;
+
+
+   .conteiner__text {
+      display: flex;
+      flex-direction: column;
+      color: $color-primary;
+      text-align: center;
+      padding-right: 10rem;
+
+      .text__video {
+         font-family: $font-title;
+         font-size: 5.8rem;
+         font-weight: 400;
+         margin-top: $spacing-medium;
+      }
+
+      .text__video--bajo {
+         font-size: $text-medium;
+         font-weight: 300;
+      }
+
+   }
+
+}

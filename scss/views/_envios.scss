@@ -1,0 +1,41 @@
+/*-------------DELIVERY-ENVIOS-------------*/
+.delivery {
+    height: 40rem;
+ }
+ 
+ .delivery__text {
+    font-family: var(--font-title);
+    font-size: 3.5rem;
+    color: var(--alternative);
+    text-align: justify;
+    margin: var(--spacing-xsmall);
+ }
+ 
+ .delivery__list {
+    font-family: var(--font-title);
+    font-size: var(--text-medium);
+    text-align: justify;
+    color: var(--secundarygi);
+ }
+ 
+ .list {
+    margin: var(--spacing-small);
+ }
+ 
+ .pago {
+    color: var(--bottom-color);
+    background-color: #1f1300;
+    border-radius: 3px;
+    font-size: var(--text-medium);
+    margin: var(--spacing-xsmall);
+ }
+ 
+ .delivery__ckeckbox {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-xsmall);
+    font-family: var(--font-title);
+    font-size: var(--text-medium);
+    margin: var(--spacing-xsmall);
+ 
+ }

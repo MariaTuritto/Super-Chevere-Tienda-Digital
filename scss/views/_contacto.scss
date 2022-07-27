@@ -1,0 +1,70 @@
+/*------- VIEWS-CONTACTO CON BOOTSTRAP----------*/
+.contacto {
+    background-color: var(--primary);
+    color: var(--secundary);
+ }
+ 
+ .contacto__text {
+    color: var(--primary);
+ }
+ .header__text{
+    color: var(--secundary);
+ }
+ .contacto__text1 {
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: var(--text-small);
+    height: 30px;
+    border-bottom: 2px solid var(--bottom-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .navbar__views {
+    background-color: var(--primary);
+ }
+ 
+ .views__menu {
+    font-size: var(--text-medium);
+    padding: var(--spacing-xsmall) 1rem;
+    border: 2px solid var(--primary);
+    transition: all 1s;
+    font-weight: 300;
+ }
+ 
+ .views__menu:hover {
+    border-color: var(--bottom-color);
+    border-radius: 5px;
+ }
+ 
+ .menu__item--views {
+    font-size: var(--text-medium);
+    padding: 0.5rem;
+    border: 1px solid var(--primary);
+    transition: all 1s;
+    font-weight: 300;
+    color: var(--secundary);
+    margin: 0 1.5rem 0 1.5rem;
+ }
+ 
+ .views__titulo {
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: var(--spacing-large);
+    border-top: 1px solid var(--bottom-color);
+    font-size: var(--text-large);
+    text-align: justify;
+    color: var(--secundary);
+ }
+ 
+ .form-label__contact {
+    font-size: var(--text-small);
+ }
+ 
+ .container__form {
+    width: 500px;
+ 
+ }
+ 
