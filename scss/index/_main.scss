@@ -13,43 +13,33 @@
       min-width: 100%;
       min-height: 100%;
       text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-
+      @include flexbox (row, center, center,);
+    
       .image__text {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
+         @include flexbox (column, center, center,);
          gap: $spacing-small;
 
-         h1 {
-            font-family: $font-principal;
+         h2 {
+            font-family: $font-secundary;
             font-size: $text-large;
-            font-weight: 400;
+            color: $color-primary;
          }
 
          &--1 {
-            font-family: $font-principal;
-            font-size: 2.5rem;
+            font-family: $font-secundary;
+            font-size: $text-medium;
          }
 
          &--2 {
+            font-family: $font-secundary;
             font-size: $text-medium;
          }
 
          &--3 {
             font-size: $text-small;
-            padding: $spacing-xsmall;
             color: $color-secundary;
-            font-weight: 700;
+      
          }
       }
    }
-
-   .btn-main {
-      background-image: linear-gradient(to top, #ffffff 10%, #c9c01c 100%)
-   }
-
 }

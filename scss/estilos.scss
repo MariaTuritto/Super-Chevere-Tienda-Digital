@@ -3,23 +3,23 @@
 
 //UTILIDADES:VARIABLES, MIXIN,FUNCIONES//
 @import './utilities/variables';
-
+@import './utilities/mixin';
 //BASE:RESET,TIPOGRAFIAS//
-@import './base/reset';
+@import './base/normalize';
 @import './base/typo';
 
 //CODIGO PARTICIONADO PARA COMPONENTES DEL INDEX QUE TIENEN FLEX O GRID//
 @import './layaout/header';
 @import './layaout/footer';
-
+//CODIGO PARTICIONADO PARA BOTONES//
+@import './components/buttons';
 //CODIGO PARTICIONADO PARA CADA PAGINA DE MI SITIO WEB//
-
+@import './index/titulo';
 @import './index/conteiner';
 @import './index/main';
 @import './index/gallery';
 @import './views/contacto';
 @import './views/envios';
-@import './views/iniciarsesion';
 @import './views/nosotros';
 @import './views/productos';
 @import './views/registrarse';

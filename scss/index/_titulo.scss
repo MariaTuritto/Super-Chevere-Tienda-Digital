@@ -1,0 +1,19 @@
+
+.back__color {
+   background-color: $color-alternative;
+}
+
+.titulo1 {
+   color: $color-primary;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: $text-small;
+   height: 30px;
+   @include flexbox (row, center, center,);
+
+   .whatsapp_img {
+      width: 18px;
+      height: 18px;
+   }
+
+}

@@ -1,40 +1,44 @@
 /*--------------PRODUCTS--------*/
+.flex__column {
+   display: flex;
+   flex-direction: column;
+}
 
 .conteinerpro {
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: var(--spacing-small);
- }
- 
- .catalogo {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: var(--spacing-medium);
- }
- 
- .catalogo__box {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-xsmall);
- }
- 
- .catalogo__info {
-    display: flex;
-    flex-direction: column;
-    padding: var(--spacing-medium);
- 
- }
- 
- .catalogo__title {
-    font-family: var(--font-title);
-    font-size: var(--text-medium);
-    color: var(--alternative);
- 
- }
- 
- .catalogo__subtitle {
-    margin-top: var(--spacing-xsmall);
-    color: var(--text-color);
-    font-size: var(--text-small);
- }
+   max-width: 1200px;
+   margin: 0 auto;
+   margin-top: $spacing-small;
+
+
+   .catalogo {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: $spacing-xsmall;
+
+      &__box {
+         @extend .flex__column;
+         gap: $spacing-xsmall;
+      }
+   }
+
+   .info {
+      @extend .flex__column;
+      padding: $spacing-xsmall;
+
+      &__title {
+         font-size: $text-medium;
+         color: $color-alternative;
+         text-align: center;
+
+      }
+
+      &__subtitle {
+         margin-top: $spacing-xsmall;
+         color: $text-color;
+         font-size: $text-small;
+         text-align: center;
+      }
+   }
+
+}

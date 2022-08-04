@@ -9,22 +9,21 @@
 
 
    .conteiner__text {
-      display: flex;
-      flex-direction: column;
-      color: $color-primary;
-      text-align: center;
+      @include flexbox (column, center, center,);
       padding-right: 10rem;
 
       .text__video {
-         font-family: $font-title;
+         font-family: $font-secundary;
          font-size: 5.8rem;
          font-weight: 400;
          margin-top: $spacing-medium;
+         color: $color-secundary;
       }
 
       .text__video--bajo {
          font-size: $text-medium;
          font-weight: 300;
+         color: $color-secundary;
       }
 
    }
