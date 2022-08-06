@@ -19,7 +19,7 @@
          @include flexbox (column, center, center,);
          gap: $spacing-small;
 
-         h2 {
+         &--0 {
             font-family: $font-secundary;
             font-size: $text-large;
             color: $color-primary;

@@ -1,20 +1,28 @@
 .btn__views {
     background: #ffbf3f;
     color: #222222;
-    font-size: 14px;
+    font-size: 12px;
     padding: 15px 25px;
     text-transform: uppercase;
     display: inline-block;
     letter-spacing: 2px;
     border: 2px solid #545454;
-    font-family: "ITC Cheltenham", serif;
+    font-family: $font-principal;
     font-weight: 400;
     font-style: normal;
     transition: all 0.2s ease;
     line-height: 1.5;
     border-radius: 6px;
 
-   &:hover{
-    background: #fcad0f;
-   }
+    &:hover {
+        background: #fcad0f;
+    }
+}
+
+
+.btn__buy {
+    @extend .btn__views;
+    padding: 12px 23px;
+    align-items: center;
+    margin: $spacing-medium;
 }

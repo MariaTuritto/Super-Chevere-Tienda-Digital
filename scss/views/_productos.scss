@@ -18,13 +18,21 @@
 
       &__box {
          @extend .flex__column;
-         gap: $spacing-xsmall;
+         align-items: center;
+
+      }
+
+      &__img {
+         width: 200px;
+         height: 250px;
+         display: flex;
+         align-items: center;
       }
    }
 
    .info {
       @extend .flex__column;
-      padding: $spacing-xsmall;
+      align-items: center;
 
       &__title {
          font-size: $text-medium;
@@ -34,7 +42,7 @@
       }
 
       &__subtitle {
-         margin-top: $spacing-xsmall;
+         margin: $spacing-xsmall;
          color: $text-color;
          font-size: $text-small;
          text-align: center;

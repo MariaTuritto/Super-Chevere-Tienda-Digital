@@ -131,23 +131,44 @@ ul {
     border-radius: 3px;
     color: #fff; }
 
-.btn__views {
+.btn__views, .btn__buy {
   background: #ffbf3f;
   color: #222222;
-  font-size: 14px;
+  font-size: 12px;
   padding: 15px 25px;
   text-transform: uppercase;
   display: inline-block;
   letter-spacing: 2px;
   border: 2px solid #545454;
-  font-family: "ITC Cheltenham", serif;
+  font-family: "lato", sans-serif;
   font-weight: 400;
   font-style: normal;
   transition: all 0.2s ease;
   line-height: 1.5;
   border-radius: 6px; }
-  .btn__views:hover {
+  .btn__views:hover, .btn__buy:hover {
     background: #fcad0f; }
+
+.btn__buy {
+  padding: 12px 23px;
+  align-items: center;
+  margin: 2.8rem; }
+
+.card {
+  border-color: #fff;
+  align-items: center; }
+
+.card-body {
+  padding: 0 2rem; }
+
+.card-title {
+  font-size: 3rem; }
+
+.card-text {
+  color: #302b27;
+  font-size: 2rem;
+  font-family: "lato", sans-serif;
+  text-align: justify; }
 
 .back__color {
   background-color: #331c01; }
@@ -214,7 +235,7 @@ ul {
       justify-content: center;
       align-items: center;
       gap: 2rem; }
-      .main__image .image__text h2 {
+      .main__image .image__text--0 {
         font-family: "ITC Cheltenham", serif;
         font-size: 5.2rem;
         color: #fff; }
@@ -262,7 +283,8 @@ form .form-label__contact {
 
 /*-------------DELIVERY-ENVIOS-------------*/
 .delivery {
-  height: 40rem; }
+  height: 60rem;
+  margin: 6rem; }
   .delivery .delivery__text {
     font-family: "ITC Cheltenham", serif;
     font-size: 3.5rem;
@@ -279,17 +301,14 @@ form .form-label__contact {
   .delivery .delivery__ckeckbox {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: none;
     align-items: center;
     gap: 1rem; }
 
 /*------------------NOSOTROS----------------*/
 .nosotros {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 2.8rem;
-  margin: 2rem; }
+  max-width: 1200px;
+  padding: 6rem; }
 
 /*--------------PRODUCTS--------*/
 .flex__column, .conteinerpro .catalogo__box, .conteinerpro .info {
@@ -306,15 +325,20 @@ form .form-label__contact {
     grid-template-rows: repeat(3, 1fr);
     gap: 1rem; }
     .conteinerpro .catalogo__box {
-      gap: 1rem; }
+      align-items: center; }
+    .conteinerpro .catalogo__img {
+      width: 200px;
+      height: 250px;
+      display: flex;
+      align-items: center; }
   .conteinerpro .info {
-    padding: 1rem; }
+    align-items: center; }
     .conteinerpro .info__title {
       font-size: 2rem;
       color: #331c01;
       text-align: center; }
     .conteinerpro .info__subtitle {
-      margin-top: 1rem;
+      margin: 1rem;
       color: #302b27;
       font-size: 1.2rem;
       text-align: center; }
@@ -328,12 +352,9 @@ form .form-label__contact {
 /*---index----*/
 @media (min-width: 320px) and (max-width: 576px) {
   .titulo1 {
-    font-size: 0.8rem;
-    height: 80px;
+    font-size: 1rem;
+    height: 60px;
     flex-wrap: wrap; }
-    .titulo1 .whatsapp_img {
-      width: 15px;
-      height: 15px; }
   .back__titulo {
     height: 60px; }
   .flex__column2, .conteiner, .conteiner .conteiner__text, .gallery__index, .footer {
@@ -366,18 +387,22 @@ form .form-label__contact {
       .conteiner .conteiner__text .text__video--bajo {
         font-size: 1.8rem;
         margin-bottom: 2.8rem; }
-  /*CORREGIR MEDIAS DESDE ACA*/
-  h2 {
-    font-size: 3.8rem; }
+    .conteiner .video__index {
+      width: 450px;
+      height: 380px; }
   .main {
     height: 350px; }
-  .image__text--1 {
-    font-size: 2rem; }
-  .image__text--2 {
-    font-size: 1.2rem; }
-  .video__index {
-    width: 450px;
-    height: 380px; }
+    .main .image__text--0 {
+      font-size: 3rem; }
+    .main .image__text--1 {
+      font-size: 2.5rem; }
+    .main .image__text--2 {
+      font-size: 1.8rem; }
+    .main .btn__views, .main .btn__buy {
+      font-size: 10px;
+      padding: 12px 22px; }
+  .title__gallery {
+    font-size: 2.8rem; }
   .gallery__index {
     align-items: center;
     gap: 6rem; }
@@ -387,7 +412,7 @@ form .form-label__contact {
     font-size: 1.5rem;
     margin-bottom: 0; }
   .menu__item {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
     border: #331c01; }
   a {
@@ -402,30 +427,34 @@ form .form-label__contact {
     width: 20px;
     height: 20px; }
   /*---contacto---*/
-  .contacto__text1 {
-    font-size: 1rem;
-    height: 50px;
-    flex-wrap: wrap; }
-  .views__menu {
-    padding: 0; }
-  .menu__item--views {
-    font-size: 1.8rem; }
   .views__titulo {
     font-size: 3.8rem; }
-  /*---productos----*/
-  .catalogo {
-    grid-template-columns: repeat(2, auto);
-    margin: 0.5rem; }
-  /*---envios----*/
-  .delivery__text {
-    font-size: 1.8rem; }
-  .list {
-    font-size: 1.6rem; }
-  .delivery__ckeckbox {
-    font-size: 1.6rem; }
-  /*----movile-----*/
   .container__form {
-    width: 100%; } }
+    width: 100%; }
+    .container__form .btn__views, .container__form .btn__buy {
+      font-size: 10px;
+      padding: 12px 22px; }
+  /*---productos----*/
+  .conteinerpro .catalogo {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(6, auto);
+    margin: 0.5rem; }
+  .conteinerpro .catalogo__box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  /*---envios----*/
+  .delivery {
+    height: 55rem;
+    margin: 2rem; }
+    .delivery .delivery__text {
+      font-size: 2.4rem; }
+    .delivery .delivery__list, .delivery .delivery__ckeckbox {
+      font-size: 1.6rem; }
+    .delivery .list {
+      font-size: 1.5rem; }
+    .delivery .delivery__ckeckbox {
+      font-size: 1.5rem; } }
 
 /*--------TABLET-------*/
 @media (min-width: 577px) and (max-width: 991px) {
@@ -434,49 +463,68 @@ form .form-label__contact {
     font-size: 1rem;
     height: 40px;
     flex-wrap: wrap; }
-  .header__info {
-    padding-top: 1rem;
-    margin: 0; }
-  .header__titulo {
-    font-size: 2.5rem; }
-  .header__subtitulo {
-    font-size: 1rem; }
-  .conteiner {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .conteiner__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-right: 0; }
-  h2 {
-    font-size: 4.5rem; }
-  .main {
-    height: 400px; }
-  .main__texto5 {
-    font-size: 1.5rem; }
-  /*continuar desde aca*/
-  .gallery__index {
-    flex-direction: column;
-    align-items: center;
-    gap: 6rem; }
-    .gallery__index .gallery__img {
-      width: 660px; }
-  .footer {
+  .back__titulo {
+    height: 45px; }
+  .flex__column3, .conteiner, .conteiner .conteiner__text, .gallery__index, .footer {
     display: flex;
     flex-direction: column; }
+  header {
+    flex-wrap: wrap;
+    padding: 3rem 0; }
+    header .header__img {
+      max-width: 80px; }
+      header .header__img:focus {
+        max-width: 90px; }
+    header .header__info {
+      padding-top: 0.2rem;
+      margin: 0 0.8rem 0 0.8rem; }
+    header .header__titulo {
+      font-size: 3rem;
+      margin-bottom: 0; }
+    header .header__subtitulo {
+      font-size: 1rem; }
+  .conteiner {
+    align-items: center;
+    margin-bottom: 2.8rem; }
+    .conteiner .conteiner__text {
+      align-items: center;
+      text-align: center;
+      padding-right: 0; }
+      .conteiner .conteiner__text .text__video {
+        font-size: 4rem; }
+      .conteiner .conteiner__text .text__video--bajo {
+        font-size: 1.8rem;
+        margin-bottom: 2.8rem; }
+    .conteiner .video__index {
+      width: 560px;
+      height: 315px; }
+  .main {
+    height: 500px; }
+    .main .image__text--0 {
+      font-size: 3.5rem; }
+    .main .image__text--1 {
+      font-size: 2.7rem; }
+    .main .image__text--2 {
+      font-size: 1.8rem; }
+  .title__gallery {
+    font-size: 3rem; }
+  .gallery__index {
+    align-items: center;
+    gap: 6rem; }
+  .gallery__img {
+    width: 500px;
+    height: 450px;
+    margin: 4rem; }
   p {
     font-size: 1.8rem;
-    margin-bottom: 0;
-    text-align: center; }
+    margin-bottom: 0; }
   .menu__item {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
     border: #331c01; }
   a {
-    font-size: 1.5em; }
+    font-size: 1rem;
+    text-align: center; }
   ul {
     padding-left: 0; }
   .footer__icons {
@@ -487,21 +535,30 @@ form .form-label__contact {
     height: 20px; }
   /*---contacto---*/
   .views__titulo {
-    font-size: 4.5rem; }
-  /*---productos---*/
-  .catalogo {
-    grid-template-columns: repeat(3, auto);
-    margin: 0.5rem;
+    font-size: 4rem; }
+  .container__form {
+    width: 100%; }
+    .container__form .btn__views, .container__form .btn__buy {
+      font-size: 12px;
+      padding: 12px 22px; }
+  /*---productos----*/
+  .conteinerpro .catalogo {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(6, auto);
+    margin: 0.5rem; }
+  .conteinerpro .catalogo__box {
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 1rem; }
-    .catalogo .info {
-      padding: 1rem; }
-      .catalogo .info__title {
-        margin: 10px; }
-  /*----envios----*/
-  .delivery__text {
-    font-size: 2rem; }
-  .list {
-    font-size: 2rem; }
-  .delivery__ckeckbox {
-    font-size: 2rem; } }
+    justify-content: center; }
+  /*---envios----*/
+  .delivery {
+    height: 55rem;
+    margin: 4rem; }
+    .delivery .delivery__text {
+      font-size: 3rem; }
+    .delivery .delivery__list, .delivery .delivery__ckeckbox {
+      font-size: 1.8rem; }
+    .delivery .list {
+      font-size: 1.8rem; }
+    .delivery .delivery__ckeckbox {
+      font-size: 1.8rem; } }

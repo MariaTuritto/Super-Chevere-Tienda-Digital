@@ -1,6 +1,7 @@
 /*-------------DELIVERY-ENVIOS-------------*/
 .delivery {
-   height: 40rem;
+   height: 60rem;
+   margin: $spacing-large;
 
    .delivery__text {
       font-family: $font-secundary;
@@ -8,6 +9,7 @@
       color: $color-alternative;
       text-align: justify;
       margin: $spacing-xsmall;
+     
    }
 
    .delivery__list {
@@ -24,7 +26,7 @@
    .delivery__ckeckbox {
 
       @extend .delivery__list;
-      @include flexbox (row, center, center, );
+      @include flexbox (row, none , center, );
       gap: $spacing-xsmall;
 
    }

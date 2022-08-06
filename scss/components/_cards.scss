@@ -1,0 +1,16 @@
+.card {
+    border-color: $color-primary;
+    align-items: center;
+}
+.card-body{
+    padding: 0 2rem;
+}
+.card-title{
+    font-size: 3rem;
+}
+ .card-text{
+    color: $text-color;
+    font-size:  $text-medium;
+    font-family:$font-principal;
+    text-align: justify;
+}

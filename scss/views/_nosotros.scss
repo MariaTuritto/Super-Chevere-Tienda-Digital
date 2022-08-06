@@ -1,10 +1,7 @@
 /*------------------NOSOTROS----------------*/
 .nosotros {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: $spacing-medium;
-    margin: $spacing-small;
+   max-width: 1200px;
+   padding: $spacing-large;
  
  }
  
