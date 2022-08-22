@@ -5,6 +5,7 @@ h3 {
     font-size: 3.5rem;
     padding: $spacing-medium;
     margin-bottom: 6rem;
+    text-transform: uppercase;
     }
     
 .gallery {
@@ -13,3 +14,14 @@ h3 {
     gap: $spacing-medium;
     justify-content: center;
  }
+
+.gallery__img{
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: $text-color 1px 1px 3px;
+
+}
+
+.img_infaltables{
+    border-radius: 15px;
+}

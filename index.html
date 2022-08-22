@@ -1,5 +1,7 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!-- Tipo de Documento-->
 <html lang="es">
+<!-------------------HEAD-------------------------->
+<!-- titulo, recursos y datos importantes -->
 
 <head>
     <meta charset="UTF-8">
@@ -18,9 +20,11 @@
     <!-- CSS propio -->
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
-
+<!--------------------BODY------------------------->
+<!-- Cuerpo de la web-->
 <body>
     <!----------------------TITLE------------------->
+    <!-- Nota inicial de la web -->
     <div class="back__titulo back__color">
         <p class="titulo1"> Entregas a domicilio dentro de zonas centricas en Rosario, consultar valor del
             envio a nuestro whatsapp
@@ -29,7 +33,7 @@
             </picture> +54 9 3412274645 </p>
     </div>
 
-    <!------------HEADER-------->
+    <!---------HEADER-------->
     <header>
         <div class="header__logo">
             <a href="index.html"><img class="header__img" src="./img/logo.jpg" alt="logo"></a>
@@ -38,6 +42,7 @@
                 <p class="header__subtitulo">Tienda digítal de productos Venezolanos</p>
             </div>
         </div>
+        <!-- NAVEGATION -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <button class="navbar-toggler icon__success" type="button" data-bs-toggle="collapse"
@@ -91,8 +96,7 @@
             </div>
         </nav>
     </header>
-
-    <!---------SECTION-------->
+    <!-- PRIMERA SECCION - VIDEO-->
     <section class="conteiner">
         <div class="conteiner__text">
             <p class="animate__animated animate__fadeInRight animate__slow text__video">¿Sabes cómo preparar ricas
@@ -108,7 +112,7 @@
         </div>
     </section>
 
-    <!---------------MAIN--------------->
+    <!--------------SEGUNDA SECCION - PRODUCTS--------------->
 
     <main class="main">
         <div class="main__image">
@@ -120,24 +124,24 @@
             </div>
         </div>
     </main>
-    <!-------------GALLERY--------------->
+    <!-------------TERCERA SECCION - GALLERY--------------->
     <div>
-        <h3 class="title__gallery">Conoce nuestros productos infaltables en tu hogar</h3>
+        <h3 class="title__gallery">Productos infaltables en tu hogar</h3>
     </div>
-    <aside id="gallery" class="gallery gallery__index">
+    <section id="gallery" class="gallery gallery__index">
         <picture class="gallery__img">
-            <img src="img/harinapan1.png" alt="Harina P.A.N">
+            <img class="img_infaltables" src="img/harinapan1.png" alt="Harina P.A.N">
         </picture>
         <picture class="gallery__img">
-            <img src="img/minitequenos1.png" alt="minitequeños">
+            <img class="img_infaltables" src="img/minitequenos1.png" alt="minitequeños">
         </picture>
         <picture class="gallery__img">
-            <img src="img/queso merida1.png" alt="quesomerida">
+            <img class="img_infaltables" src="img/queso merida1.png" alt="quesomerida">
         </picture>
         <picture class="gallery__img">
-            <img src="img/quesoconguayaba.png" alt="bocadillo">
+            <img class="img_infaltables" src="img/quesoconguayaba.png" alt="bocadillo">
         </picture>
-    </aside>
+    </section>
 
     <!----------------FOOTER----------------->
     <footer class="footer back__color">
@@ -186,7 +190,7 @@
             <p><a class="footer__item" href="./index.html">Volver al Inicio</a></p>
         </div>
     </footer>
-    <!-- JavaScript Bundle with Popper -->
+    <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>

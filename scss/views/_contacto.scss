@@ -1,13 +1,23 @@
 /*------- VIEWS-CONTACTO----------*/
 .views__titulo {
-   font-family: $font;
+   font-family: $font-secundary;
    font-weight: 300;
    margin-top: $spacing-large;
    padding: 20px;
    border-top: 1px solid $bottom-color;
-   font-size: $spacing-large;
-   text-align: justify;
+   font-size: 8.5rem;
    color: $color-alternative;
+   grid-area: banner;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: url(/img/fondosarepas.jpg);
+   height: 100px;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 35vh;
 }
 
 .text-center {

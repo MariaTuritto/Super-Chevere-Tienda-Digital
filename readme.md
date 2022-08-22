@@ -1,2 +1,10 @@
-<h1>Super Chevere tienda digital</h1>
-<p>Nuevo emprendimiento en la ciudad de Rosario, venta de productos venezolanos nacionales e importados</p>
+<h1>Proyecto Final Curso Desarrollo Web CoderHouse</h1>
+<h2>Herramientas utilizadas</h2>
+<ul>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>Boostrap 5</li>
+<li>SASS</li> 
+<li>Node.js</li>
+<li>WOWanimation</li>
+</ul>

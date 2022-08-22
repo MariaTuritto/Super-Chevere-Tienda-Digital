@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Roboto+Condensed:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Roboto+Condensed:wght@300;400&display=swap");
 *::after,
 *::before,
 * {
@@ -63,7 +64,7 @@ header {
       color: #000000;
       margin: 0 1.5rem 0 1.5rem; }
       header .navbar .menu__item:hover {
-        border-color: #fcad0f;
+        border-color: #bd881ff5;
         border-radius: 3px;
         color: #000000; }
     header .navbar .menu__product {
@@ -127,7 +128,7 @@ ul {
   margin: 0 1.5rem 0 1.5rem;
   text-decoration: none; }
   .footer__item:hover {
-    border-color: #fcad0f;
+    border-color: #bd881ff5;
     border-radius: 3px;
     color: #fff; }
 
@@ -188,13 +189,15 @@ ul {
     width: 18px;
     height: 18px; }
 
-/*--------Seccion principal---------*/
+/*---------SEGUNDA SECCION - VIDEO-------*/
 .conteiner {
+  background-color: #bd881ff5;
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 2rem;
   display: flex;
-  justify-content: space-evenly; }
+  border-radius: 5px;
+  box-shadow: #bdb8b8 0px 10px 14px 1px; }
   .conteiner .conteiner__text {
     display: flex;
     flex-direction: column;
@@ -202,15 +205,17 @@ ul {
     align-items: center;
     padding-right: 10rem; }
     .conteiner .conteiner__text .text__video {
-      font-family: "ITC Cheltenham", serif;
-      font-size: 5.8rem;
+      font-family: "Gilda Display", serif;
+      font-size: 6.5rem;
       font-weight: 400;
       margin-top: 2.8rem;
-      color: #000000; }
+      color: #fff; }
     .conteiner .conteiner__text .text__video--bajo {
       font-size: 2rem;
       font-weight: 300;
-      color: #000000; }
+      color: #fff; }
+  .conteiner .video {
+    margin-top: 40px; }
 
 /*-------------main---------------*/
 .main {
@@ -237,14 +242,14 @@ ul {
       align-items: center;
       gap: 2rem; }
       .main__image .image__text--0 {
-        font-family: "ITC Cheltenham", serif;
+        font-family: "Gilda Display", serif;
         font-size: 5.2rem;
         color: #fff; }
       .main__image .image__text--1 {
-        font-family: "ITC Cheltenham", serif;
+        font-family: "Gilda Display", serif;
         font-size: 2rem; }
       .main__image .image__text--2 {
-        font-family: "ITC Cheltenham", serif;
+        font-family: "Gilda Display", serif;
         font-size: 2rem; }
       .main__image .image__text--3 {
         font-size: 1.2rem;
@@ -256,23 +261,42 @@ h3 {
   font-weight: 400;
   font-size: 3.5rem;
   padding: 2.8rem;
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem;
+  text-transform: uppercase; }
 
 .gallery {
   display: flex;
   gap: 2.8rem;
   justify-content: center; }
 
+.gallery__img {
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  box-shadow: #302b27 1px 1px 3px; }
+
+.img_infaltables {
+  border-radius: 15px; }
+
 /*------- VIEWS-CONTACTO----------*/
 .views__titulo {
-  font-family: "Lobster", sans-serif;
+  font-family: "Gilda Display", serif;
   font-weight: 300;
   margin-top: 6rem;
-  padding: 18px;
-  border-top: 1px solid #fcad0f;
-  font-size: 6rem;
-  text-align: justify;
-  color: #331c01; }
+  padding: 20px;
+  border-top: 1px solid #bd881ff5;
+  font-size: 8.5rem;
+  color: #331c01;
+  grid-area: banner;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/fondosarepas.jpg);
+  height: 100px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35vh; }
 
 .text-center {
   padding: 2rem; }
@@ -288,13 +312,13 @@ form .form-label__contact {
   height: 60rem;
   margin: 6rem; }
   .delivery .delivery__text {
-    font-family: "ITC Cheltenham", serif;
+    font-family: "Gilda Display", serif;
     font-size: 3.5rem;
     color: #331c01;
     text-align: justify;
     margin: 1rem; }
   .delivery .delivery__list, .delivery .delivery__ckeckbox {
-    font-family: "ITC Cheltenham", serif;
+    font-family: "Gilda Display", serif;
     font-size: 2rem;
     text-align: justify;
     color: #000000; }
@@ -332,7 +356,8 @@ form .form-label__contact {
       width: 200px;
       height: 250px;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      box-shadow: #302b27 1px 1px 3px; }
   .conteinerpro .info {
     align-items: center; }
     .conteinerpro .info__title {
