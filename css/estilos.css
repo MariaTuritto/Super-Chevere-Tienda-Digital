@@ -78,6 +78,7 @@ header {
         background-color: #fff; }
     header .navbar .menu__registro {
       display: flex;
+      justify-content: space-around;
       gap: 2.8rem; }
 
 /*----------footer---------*/
@@ -160,15 +161,17 @@ ul {
   align-items: center; }
 
 .card-body {
-  padding: 0 2rem; }
+  margin: 3.6rem;
+  align-content: center; }
 
 .card-title {
-  font-size: 3rem;
-  padding: 10px; }
+  font-size: 4.3rem;
+  padding: 10px;
+  font-family: "Gilda Display", serif; }
 
 .card-text {
   color: #302b27;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: "lato", sans-serif;
   text-align: justify; }
 
@@ -333,8 +336,9 @@ form .form-label__contact {
 
 /*------------------NOSOTROS----------------*/
 .nosotros {
-  max-width: 1200px;
-  padding: 6rem; }
+  padding: 6rem;
+  display: flex;
+  justify-content: center; }
 
 /*--------------PRODUCTS--------*/
 .flex__column, .conteinerpro .catalogo__box, .conteinerpro .info {
@@ -402,6 +406,9 @@ form .form-label__contact {
       margin-bottom: 0; }
     header .header__subtitulo {
       font-size: 1rem; }
+    header .navbar .menu__item {
+      padding: 2px;
+      margin: 1rem 0 1rem 0; }
   .conteiner {
     align-items: center;
     margin-bottom: 2.8rem; }
@@ -481,7 +488,14 @@ form .form-label__contact {
     .delivery .list {
       font-size: 1.5rem; }
     .delivery .delivery__ckeckbox {
-      font-size: 1.5rem; } }
+      font-size: 1.5rem; }
+  /*----Nosotros----*/
+  .card-body {
+    margin: 1rem; }
+  .card-title {
+    font-size: 2.2rem; }
+  .card-text {
+    font-size: 1.5rem; } }
 
 /*--------TABLET-------*/
 @media (min-width: 577px) and (max-width: 991px) {
@@ -510,6 +524,9 @@ form .form-label__contact {
       margin-bottom: 0; }
     header .header__subtitulo {
       font-size: 1rem; }
+    header .navbar .menu__item {
+      padding: 2px;
+      margin: 1rem 0 1rem 0; }
   .conteiner {
     align-items: center;
     margin-bottom: 2.8rem; }
@@ -545,10 +562,6 @@ form .form-label__contact {
   p {
     font-size: 1.8rem;
     margin-bottom: 0; }
-  .menu__item {
-    font-size: 1.8rem;
-    text-align: center;
-    border: #331c01; }
   a {
     font-size: 1rem;
     text-align: center; }
@@ -588,4 +601,13 @@ form .form-label__contact {
     .delivery .list {
       font-size: 1.8rem; }
     .delivery .delivery__ckeckbox {
-      font-size: 1.8rem; } }
+      font-size: 1.8rem; }
+  /*----Nosotros----*/
+  .nosotros {
+    padding: 4rem; }
+  .card-body {
+    margin: 2rem; }
+  .card-title {
+    font-size: 3.2rem; }
+  .card-text {
+    font-size: 2rem; } }

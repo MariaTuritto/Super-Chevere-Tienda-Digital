@@ -87,6 +87,7 @@ header {
 
       .menu__registro {
          display: flex;
+         justify-content: space-around;
          gap: $spacing-medium
       }
    }

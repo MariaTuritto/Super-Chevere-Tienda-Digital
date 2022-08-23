@@ -43,6 +43,16 @@
       .header__subtitulo {
          font-size: $text-base;
       }
+
+      .navbar {
+
+         .menu__item {
+            padding: 2px;
+            margin: 1rem 0 1rem 0;
+         }
+
+      }
+
    }
 
    .conteiner {
@@ -200,9 +210,21 @@
          font-size: 1.5rem;
       }
    }
+/*----Nosotros----*/
+.card-body{
 
+   margin: 1rem;
+  
+}
 
+.card-title{
 
+   font-size: 2.2rem;
+}
+.card-text{
+ 
+   font-size:  1.5rem;
+}
 
 }
 
@@ -250,6 +272,15 @@
 
       .header__subtitulo {
          font-size: $text-base;
+      }
+
+      .navbar {
+
+         .menu__item {
+            padding: 2px;
+            margin: 1rem 0 1rem 0;
+         }
+
       }
    }
 
@@ -321,13 +352,6 @@
    p {
       font-size: 1.8rem;
       margin-bottom: 0;
-   }
-
-   .menu__item {
-      font-size: 1.8rem;
-      text-align: center;
-      border: $color-alternative;
-
    }
 
    a {
@@ -407,4 +431,24 @@
          font-size: 1.8rem;
       }
    }
+
+   /*----Nosotros----*/
+
+.nosotros {
+   padding: 4rem;
+}
+.card-body{
+   
+   margin: 2rem;
+  
+}
+
+.card-title{
+
+   font-size: 3.2rem;
+}
+.card-text{
+ 
+   font-size:  2rem;
+}
 }

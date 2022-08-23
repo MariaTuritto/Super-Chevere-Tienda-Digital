@@ -1,17 +1,21 @@
 .card {
     border-color: $color-primary;
     align-items: center;
+
 }
 .card-body{
-    padding: 0 2rem;
+    margin: 3.6rem;
+    align-content: center; 
 }
+
 .card-title{
-    font-size: 3rem;
+    font-size: 4.3rem;
     padding: 10px;
+    font-family: $font-secundary;
 }
  .card-text{
     color: $text-color;
-    font-size:  $text-medium;
-    font-family:$font-principal;
+    font-size:  2.5rem;
+    font-family: $font-principal;
     text-align: justify;
 }
